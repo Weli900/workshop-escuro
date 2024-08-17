@@ -60,6 +60,9 @@
             font-weight: bold;
             text-align: right;
         }
+        .texto-branco {
+            color: #f3f3f3;
+        }
     </style>
 </head>
 <body>
@@ -69,19 +72,21 @@
     </header>
     <div class="container">
         <div class="produto">
-            <label for="produto">Produto:</label>
+            <label for="produto"><a class="texto-branco"> Produto:</a></label>
             <input type="text" id="produto" placeholder="Nome do Produto - R$Preço">
-            <label for="nome produto">Nome do Produto - R$Preço</label>
-            <label for="quantidade">Quantidade:</label>
+            <label for="nome produto"><a class="texto-branco">Nome do Produto - R$Preço</label>
+            <label for="quantidade">Quantidade:</label></a>
             <input type="number" id="quantidade" value="1">
             <button onclick="adicionar()">Adicionar ao Carrinho</button>
         </div>
 
         <div class="carrinho">
+            <a class="texto-branco">
             <h2>Carrinho de Compras</h2>
             <div id="lista-produtos"></div>
             <div class="total">
                 <strong>Total:</strong> <span id="valor-total">R$ 0</span>
+            </a>
             </div>
         </div>
     </div>
